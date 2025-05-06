@@ -43,7 +43,7 @@ void Comp_Club::parse_file()
 				break;
 			case 4:
 				leave(time, name);
-
+				break;
 			}
 		}
 		end_leave();
@@ -63,12 +63,11 @@ void Comp_Club::parse_file()
 				tables[i].sum = hours * price;
 			}
 			std::cout << i + 1 <<" "<< tables[i].sum <<" ";
-			//<< tables[i].time << std::endl
 			printf("%02d:%02d\n", sum_time.tm_hour, sum_time.tm_min);
 		}
 	}
 	else {
-		std::cout << "Ïðîáëåìà ñ ôàéëîì" << std::endl;
+		std::cout << "Проблема с файлом" << std::endl;
 	}
 
 }
