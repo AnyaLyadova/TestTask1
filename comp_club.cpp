@@ -43,13 +43,7 @@ void Comp_Club::parse_file()
 				break;
 			case 4:
 				leave(time, name);
-			default:
-				printf("%02d:%02d ", time.tm_hour, time.tm_min);
-				std::cout << event << " " << name;
-				std::getline(fin, line);
 
-				std::cout << line;
-				exit(0);
 			}
 		}
 		end_leave();
@@ -74,7 +68,7 @@ void Comp_Club::parse_file()
 		}
 	}
 	else {
-		std::cout << "Ïðîáëåìà ñ ôàéëîì" << std::endl;
+		std::cout << "ÃÃ°Ã®Ã¡Ã«Ã¥Ã¬Ã  Ã± Ã´Ã Ã©Ã«Ã®Ã¬" << std::endl;
 	}
 
 }
